@@ -34,15 +34,14 @@ const Header = ({ session, muted, mutePlayback, unmutePlayback, login }) => (
   
     <Link href="/">
       <a style={Object.assign({}, linkStyle, mainLinkStyle)}>
-        <img src="/static/c-icon-128.png" height="30" />
+        <img src= "http://3zjz5846rz8u2ze5dj1p5kek.wpengine.netdna-cdn.com/wp-content/uploads/2015/04/File-Sync-grey.png"  height="35" />
       </a>
     </Link>
+    <font size="5">SYNC</font>
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <Link href="/about">
       <a style={linkStyle}><FormattedMessage id="about" /></a>
-      
     </Link>
-    <span style={{textAlign : 'center'}}>SYNC</span>  
-    
     
     {session.user
       ? <div className="media user-header">

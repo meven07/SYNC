@@ -26,7 +26,7 @@ class Devices extends React.PureComponent {
         <style>
           {ButtonDarkStyle}
         </style>
-        <RaisedButton
+        <button
           className="btn btn--dark"
           disabled={isFetching}
           onClick={() => {
@@ -34,7 +34,7 @@ class Devices extends React.PureComponent {
           }}
         >
           <FormattedMessage id="devices.fetch" />
-        </RaisedButton>
+        </button>
         
         {devices.length === 0
           ? <p><FormattedMessage id="devices.empty" /></p>
@@ -45,13 +45,13 @@ class Devices extends React.PureComponent {
                     <td>
                       {device.is_active
                         ? <strong>Active -&gt;</strong>
-                        : <RaisedButton
+                        : <button
                             onClick={() => {
                               transferPlaybackToDevice(device.id);
                             }}
                           >
                             <FormattedMessage id="devices.transfer" />
-                          </RaisedButton>}
+                          </button>}
                     </td>
                     <td>
                       {device.name}

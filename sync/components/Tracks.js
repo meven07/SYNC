@@ -128,8 +128,8 @@ class GitHub extends Component {
         <MuiThemeProvider>
         <div className="container" style = {{width: 320 ,height: 300}}>
             
-        <button onClick={this.saveTrack} className="btn btn-primary form-control">Save</button> &nbsp;&nbsp;
-        <button onClick={this.getTracks} className="btn btn-primary form-control">Favourites</button>
+        <button onClick={this.saveTrack} style={{backgroundColor : 'white'}} className="btn btn-primary form-control">Save</button> &nbsp;&nbsp;
+        <button onClick={this.getTracks} style={{backgroundColor : 'white'}} className="btn btn-primary form-control">Favourites</button>
         <br/><br/>
         {this.state.githubData.tracks !== null ? 
             <Table height='300px' fixedHeader='Tracks' >

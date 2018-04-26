@@ -9,14 +9,9 @@ export default ({ index, item, session, onRemoveItem, onVoteUp }) => {
     : null;
   return (
     <table style={{border: '1'}}>
-    <tr>
-        <th></th>
-        <th style={{textAlign: 'center'}}>No</th> 
-        <th style={{textAlign: 'center'}}>Track</th>
-        <th style={{textAlign: 'center'}}>Artist</th> 
-        <th style={{textAlign: 'center'}}>User</th>
-        <th></th>
-   </tr>
+    
+        
+   
     <tr>
       <td style={{ paddingRight: '10px' }}>
         <img src={item.track.album.images[2].url} width="40" height="40" />

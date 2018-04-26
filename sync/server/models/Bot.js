@@ -5,7 +5,7 @@ class Bot {
     this.recommendations = {};
   }
 
-  /*async generateRecommendation(items, getToken, spotifyApi) {
+  async generateRecommendation(items, getToken, spotifyApi) {
     const trackIds = items.filter(i => i.user.type === 'user').map(i => i.track.id);
 
     if (trackIds.length) {
@@ -23,7 +23,7 @@ class Bot {
     } else {
       return null;
     }
-  }*/
+  }
 
   toJSON() {
     return {
