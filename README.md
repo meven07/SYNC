@@ -14,7 +14,7 @@ A user can also save a track he likes in his/her favorites list and this list ca
 - Run the command npm run dev to start the react-redux application.
 -	Run the player application on another port e.g 3001 and the music can be transferred to this player.
 -	Start the chat server using the command node server/chatserver.js from the react-redux application.
--	For the backend stack run the WebAPI application. It should run on port 5000.
+-	For the backend stack run the WebAPI (Tracks) application. It should run on port 5000.
 -	Hit the URL localhost:5000/api/system/init. This will create the default Tracks database with 4 dummy data of users.
 
   
